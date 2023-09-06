@@ -1,3 +1,15 @@
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    /*===== Colores =====*/
+    --bg-color: #ffffff;
+    --button-color: #3d94ff;
+    --button-light-color: #bdbdbd;
+    --black-color: #000000;
+  }
+
+
 body {
     margin: 0;
     padding: 0;
