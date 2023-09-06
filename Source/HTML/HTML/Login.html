@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test.net</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Basic CSS for styling */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+            }
+    
+            /* Container for the login form */
+            .login-container {
+                width: 300px;
+                margin: 100px auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            /* Login form styling */
+            .login-form {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .login-form label,
+            .login-form input {
+                margin-bottom: 10px;
+            }
+    
+            .login-form input[type="text"],
+            .login-form input[type="password"] {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+    
+            .login-form input[type="submit"] {
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+    
+            .login-form input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form class="login-form" action="your-server-endpoint.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
