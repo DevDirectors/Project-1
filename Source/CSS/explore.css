@@ -1,0 +1,105 @@
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    /*===== Colores =====*/
+    --bg-color: rgb(73, 61, 139);
+    --button-color: #3d94ff;
+    --button-light-color: #bdbdbd;
+    --black-color: #000000;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:var(--bg-color);
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    padding-top: 20px;
+    color: #fff;
+    border-right: 5px solid var(--black-color); /* Add a black border to the right side */
+}
+.sidebar a {
+    padding: 16px 15px;
+    border-radius: 5px;
+    margin: 7%;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--black-color);
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: var(--button-light-color);
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Content area styling */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 0px;
+}
+.component{
+    flex: auto;
+    margin: 30px;
+}
+
+        /* Container for the search bar and cards */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Search bar styling */
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        /* Card container styling */
+        .card-container {
+            display: flex;
+            flex-wrap:wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Individual card styling */
+        .card {
+            width: calc(46.5% - 20px);
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            object-fit:contain;
+            display: flex;
+            
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+.card p{
+margin-left: 30px;}
+.image-1{
+ 
+    height: 100%;
+    width: 40%;
+   
+}
