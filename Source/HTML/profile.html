@@ -1,43 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <link href="/Source/CSS/profile.css" rel="stylesheet">
-    <link href="/Source/CSS/style.css" rel="stylesheet">
-
-</head>
-<body>
-    <div class="component">
-        <div class="sidebar">
-            <a href="Explore.html">Explore</a>
-            <a href="Dashboard.html">Dashboard</a>
-            <a href="Notification.html">Notification</a>
-            <a href="Favorites.html">Favourite</a>
-            <a href="Settings.html">Settings</a>
-            <a href="Login.html">Login</a>
-
-
-        </div>
-    <div class="main-container">
-        <div>
-            <div class="profile-image">
-            <div class="profile-info">
-                <h1>Name</h1>
-                <p>Place</p>
-            </div>
-            </div>
-        </div>
-
-        <div class = "info">
-            <input type="text" class="text-field" placeholder="Field 1">
-            <input type="text" class="text-field" placeholder="Field 2">
-            <input type="text" class="text-field" placeholder="Field 3">
-            <input type="text" class="text-field" placeholder="Field 4">
-            <input type="text" class="text-field" placeholder="Field 5">
-            <input type="text" class="text-field" placeholder="Field 6">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link href="design.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div>
+        <button class="sidebarButtons">Search</button>
+        <button class="sidebarButtons">Current Stay</button>
+        <button class="sidebarButtons">About Us</button>
+        <button class="sidebarButtons">Contact Us</button>
+      </div>
+      <div class="sidebarImage">
+        <img src="logo.png" alt="Your Image" />
+      </div>
     </div>
-</body>
+    <div class="main-container">
+      <div>
+        <h1 class="profile-tag">Profile</h1>
+        <hr style="border-width: 10px" />
+        <br /><br />
+      </div>
+      <div class="profile-left">
+        <div class="profile-image"></div>
+        <div class="profile-info">
+          <h1>Username</h1>
+          <p>Current place of stay</p>
+        </div>
+      </div>
+      <div class="profile-right">
+        <div>
+          <p class="user-info">Phone Number</p>
+          <p class="user-info">Email</p>
+          <p class="user-info">Age</p>
+          <p class="user-info">Gender</p>
+          <p class="user-info">Place of origin</p>
+        </div>
+      </div>
+
+      <div class="history">
+        <h1 class="profile-tag">Stay History</h1>
+        <hr style="border-width: 10px" />
+        <br /><br />
+        <table>
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>Hostel ID</th>
+              <th>Name of Hostel</th>
+              <th>Check In Date</th>
+              <th>Check Out Date</th>
+              <th>No. of Days Stayed</th>
+              <th>Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- You can add rows of data here -->
+            <tr>
+              <td>1</td>
+              <td>H001</td>
+              <td>Hostel A</td>
+              <td>2023-09-01</td>
+              <td>2023-09-10</td>
+              <td>10</td>
+              <td>$300</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>H002</td>
+              <td>Hostel B</td>
+              <td>2023-09-05</td>
+              <td>2023-09-15</td>
+              <td>10</td>
+              <td>$350</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </body>
 </html>
