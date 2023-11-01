@@ -11,49 +11,46 @@
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: Arial, sans-serif;
     background-color:var(--bg-color);
-}
-
-/* Sidebar styling */
-.sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-color);
-    padding-top: 20px;
+    background: linear-gradient(90deg, #784ecf 0%, #a7aedf 100%);
+  }
+  .title{
+    font-size: 25px; 
+    color: rgb(13, 210, 245);
+  }
+  /* Sidebar styling */
+  .sidebar {
+  
+    align-self: flex-end;
     color: #fff;
-    border-right: 5px solid var(--black-color); /* Add a black border to the right side */
-}
-.sidebar a {
-    padding: 16px 15px;
-    border-radius: 5px;
-    margin: 7%;
+    margin-left: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  
+  .sidebar a {
+    display:inline;
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-right: 10px;
     text-decoration: none;
-    font-size: 18px;
-    color: var(--black-color);
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: var(--button-light-color);
-}
-
-.sidebar a:hover {
-    background-color: #555;
-}
-
+  }
+  
+  .sidebar a:hover {
+    color: #210dd1;
+  }
+  
 /* Content area styling */
 .content {
-    margin-left: 250px;
     padding: 20px;
     padding-top: 0px;
 }
 .component{
     flex: auto;
-    margin: 30px;
+    margin: 10px;
 }
 
         /* Container for the search bar and cards */

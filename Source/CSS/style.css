@@ -14,31 +14,29 @@
     padding: 0;
     font-family: Arial, sans-serif;
     background-color:var(--bg-color);
+    background-image: url("/Media/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
+.title{
+    font-size: 25px; 
+    color: rgb(13, 210, 245);
+}
 /* Sidebar styling */
 .sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-color);
-    padding-top: 20px;
+ 
+    align-self: flex-end;
     color: #fff;
-    border-right: 5px solid var(--black-color); /* Add a black border to the right side */
+    margin-left: auto;
 }
+
 .sidebar a {
-    padding: 16px 15px;
-    border-radius: 5px;
-    margin: 7%;
-    text-decoration: none;
-    font-size: 18px;
-    color: var(--black-color);
-    display: block;
+    display:inline;
+    color: aliceblue;
     margin-bottom: 10px;
-    text-align: center;
-    background-color: var(--button-light-color);
+    text-align: left;
+    margin-right: 5px;
 }
 
 .sidebar a:hover {
@@ -47,19 +45,20 @@
 
 /* Content area styling */
 .content {
-    margin-left: 250px;
-    padding: 20px;
+    padding: 15px;
     padding-top: 0px;
 }
 .component{
     flex: auto;
-    margin: 30px;
+    margin: 15px;
 }
 
         /* Container for the search bar and cards */
         .container {
             max-width: 100%;
             margin: 0 auto;
+            margin-top: 20px;
+            margin-right: 20px;
         }
 
         /* Search bar styling */
